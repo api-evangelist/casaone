@@ -1,7 +1,26 @@
 aid: casaone
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/casaone.png
 name: CasaOne
-description: 'CasaOne is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'CasaOne is a US-based home-furnishing and furniture-rental company backed
+  by Accel, offering month-to-month rental of furniture, decor, and appliances for
+  homes, offices, and real-estate staging, with an option to buy rented pieces. It
+  operated a direct-to-consumer e-commerce storefront serving multiple US metros.
+  As of this profiling its public storefront at www.casaone.com returns an HTTP 402
+  "Store unavailable" response (a frozen/unpaid storefront state), and no public developer
+  portal, API documentation, or machine-readable API surface (OpenAPI/AsyncAPI/GraphQL)
+  could be located. This API Evangelist profile records the company identity and its
+  probed domain-security posture; no API artifacts are available to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/casaone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Furniture
+- Rental
+- Home
+- E-commerce
+- Staging
+- Interior Design
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/casaone-domain-security.yml
 - type: Website
   url: http://www.casaone.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
