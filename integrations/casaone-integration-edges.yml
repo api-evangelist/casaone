@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/casaone/integrations
+- https://n8n.io/integrations/casaone/
+- https://composio.dev/toolkits/casaone
+- https://monid.ai/tools/casaone
+checked:
+- https://composio.dev/toolkits/casaone
+- https://monid.ai/tools/casaone
+- https://n8n.io/integrations/casaone/
+- https://zapier.com/apps/casaone/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
